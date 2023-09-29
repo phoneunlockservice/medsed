@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>contact us__0011</title>
+    <script src="https://kit.fontawesome.com/b7edaf827a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 29px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(115, 125, 215);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style inputs */
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 15px;
+            border: 5px solid #ccc;
+            margin-top: 1px;
+            margin-bottom: 15px;
+            resize: vertical;
+
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Style the container/contact section */
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        /* Create two columns that float next to eachother */
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<style>
+    body {
+        background-image: url();
+        background-size: cover;
+    }
+
+    .vl {
+        border: 1px solid rgb(178, 197, 195);
+        height: fit-content;
+        background-color: #f1f6f6;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+
+<body class="container">
+    <div style="color: #111e19; text-align:left">
+        <h2>Contact Us</h2>
+        <hr width="100%"> <br>
+
+        <div class="vl"> <strong>
+                <p> You can use the <a href="Virtual Assistant.html">Virtual Assistant</a> to get answers to a
+                    specified number of prearranged queries, WhatsApp us or
+                    leave a
+                    message.</p>
+            </strong>
+        </div> <br>
+    </div> <br>
+
+    <div class="column">
+        <form action="insert.php" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..." required>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+            <label for="regcit">Region/City</label>
+            <select id="regcit" name="regioncity" required>
+                <option id="regcitt" value=""></option>
+                <option id="regcitt" value="Buea">Buea</option>
+                <option value="Bda">Bamenda</option>
+                <option value="Bertoua">Bertoua</option>
+                <option value="Dla">Douala</option>
+                <option value="Kmba">Kumba</option>
+                <option value="Limbe">Limbe</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="emailaddress">Email Address</label>
+            <button id="btn" type="button" style="border: none; float: right;"><img src="info-logo 2.png"
+                    style="margin-top: 14;" width="18px" height="16px" alt=""></button>
+            <script src="safetyinfo.js"></script>
+            <input type="text" id="emailaddress" name="emailaddress" placeholder=" e.g. ojongelizabeth@gmail.com"
+                required>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="textarea" placeholder="Please provide a simple description of your query..."
+                required style="height:170px"></textarea>
+            <input type="submit" value="submit"><br><br>
+            <i class="fa fa-photo"></i>
+            <a href="getElementfromUser.html" style="color: black; font-size: small;" >I rather provide a screenshot(s)</a>
+        </form>
+    </div>
+    </div>
+    </div>
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+    <script>
+        var wa_btnSetting = { "btnColor": "#16BE45", "ctaText": "WhatsApp Us", "cornerRadius": 40, "marginBottom": 20, "marginLeft": 20, "marginRight": 20, "btnPosition": "right", "whatsAppNumber": "237654714415", "placeHolder": "Hi", "instantMessage": "Hello, i have a concern", "zIndex": 999999, "btnColorScheme": "dark" };
+        window.onload = () => {
+            _waEmbed(wa_btnSetting);
+        };
+    </script>
+</body>
+
+</html>
